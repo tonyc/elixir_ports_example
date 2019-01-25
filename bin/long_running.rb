@@ -2,10 +2,13 @@
 
 puts "Starting up"
 
-100.times do |n|
-  sleep 3
+TOTAL = 10
 
-  puts "Progress: Step #{n} of 100: (#{n}%)"
+TOTAL.times do |n|
+  STDOUT.flush
+  sleep 1 
+  puts "Progress: step #{n+1} of #{TOTAL}"
 end
 
+STDOUT.flush
 puts "Done"
